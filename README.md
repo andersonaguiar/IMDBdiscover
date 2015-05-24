@@ -1,7 +1,7 @@
 IMDBdiscover
 ========
 
-Chrome extension to search movies, series and musics in the IMDB.
+Chrome extension to search movies, series and musics on IMDB.
 
 ![http://i.imgur.com/ceC0LG2.gif](http://i.imgur.com/ceC0LG2.gif)
 
