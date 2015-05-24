@@ -1,0 +1,25 @@
+{
+  "name": "IMDBdiscover",
+  "version": "1.0.1",
+  "manifest_version": 2,
+  "description": "Find films, musics and series on the IMDB",
+  "icons" : {
+    "default_icon": "imdb.png",
+    "16" : "imdb.png",
+    "48" : "imdb.png",
+    "128" : "imdb.png"
+  },
+  "permissions": [
+    "contextMenus"
+  ],
+  "background": {
+    "persistent": false,
+    "scripts": ["contextmenu.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.google.com.br/?utm-source=extension-imdbdiscover*"],
+      "js": ["jquery.js", "imdbdiscover.js"]
+    }
+  ]
+}
