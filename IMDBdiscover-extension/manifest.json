@@ -1,6 +1,6 @@
 {
   "name": "IMDBdiscover",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "manifest_version": 2,
   "description": "Find films, musics and series on the IMDB",
   "icons" : {
@@ -18,8 +18,8 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://www.google.com.br/?utm-source=extension-imdbdiscover*"],
-      "js": ["jquery.js", "imdbdiscover.js"]
+      "matches": ["*://www.google.com.br/?utm_source=extension-imdbdiscover*"],
+      "js": ["imdbdiscover.js"]
     }
   ]
 }

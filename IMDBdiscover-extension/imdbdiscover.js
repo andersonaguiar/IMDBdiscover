@@ -1,10 +1,16 @@
-$(function(){
+(function() {
   var interval = setInterval(
     function() {
-      if ($('#rso a:first').attr('href') != undefined) {
-        window.location = $('#rso a:first').attr('href');
+      var target          = document.getElementById('rso'),
+          firstResultLink = target.getElementsByTagName('a')[0];
+
+      if (!!firstResultLink.href) {
+        window.location = firstResultLink.href;
         clearInterval(interval);
       }
     }, 200
   );
-});
+})();
+
+
+
